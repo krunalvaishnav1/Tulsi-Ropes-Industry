@@ -5,6 +5,7 @@ import main1 from "../assets/main1.jpg";
 import h31 from "../assets/h31.jpg";
 import h32 from "../assets/h32.jpg";
 import h33 from "../assets/h33.jpg";
+import h41 from "../assets/h41.jpg";
 import coilblue from "../assets/2.5 coil b.jpg";
 import coilred from "../assets/2.5 coil.jpg";
 import hank from "../assets/2 hank.jpg";
@@ -41,6 +42,7 @@ export default {
   h31,
   h32,
   h33,
+  h41,
 };
 
 export { desc };  // Explicitly export the 'desc' array

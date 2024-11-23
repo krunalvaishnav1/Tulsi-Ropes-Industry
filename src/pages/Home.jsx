@@ -53,7 +53,7 @@ const Home = () => {
         <section className="px-6 md:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Manufacturing Excellence Section */}
-            <div className="bg-indigo-800 p-6 rounded-lg text-center shadow-xl flex flex-col justify-between h-full overflow-hidden">
+            <div className="bg-indigo-800 p-6 rounded-lg text-center shadow-xl flex flex-col justify-between h-full overflow-hidden border-b-4 border-indigo-800 hover:border-white transform transition-transform duration-300 hover:translate-x-2">
               <h3 className="text-2xl font-bold mb-4 text-white">
                 Manufacturing Excellence
               </h3>
@@ -65,7 +65,7 @@ const Home = () => {
             </div>
 
             {/* Versatile Applications Section */}
-            <div className="bg-blue-800 p-6 rounded-lg text-center shadow-xl flex flex-col justify-between h-full overflow-hidden">
+            <div className="bg-blue-800 p-6 rounded-lg text-center shadow-xl flex flex-col justify-between h-full overflow-hidden border-b-4 border-blue-800 hover:border-white transform transition-transform duration-300 hover:translate-x-2">
               <h3 className="text-2xl font-bold mb-4 text-white">
                 Versatile Applications
               </h3>
@@ -77,7 +77,7 @@ const Home = () => {
             </div>
 
             {/* Uncompromising Quality Section */}
-            <div className="bg-sky-800 p-6 rounded-lg text-center shadow-xl flex flex-col justify-between h-full overflow-hidden">
+            <div className="bg-sky-800 p-6 rounded-lg text-center shadow-xl flex flex-col justify-between h-full overflow-hidden border-b-4 border-sky-800 hover:border-white transform transition-transform duration-300 hover:translate-x-2">
               <h3 className="text-2xl font-bold mb-4 text-white">
                 Uncompromising Quality
               </h3>
