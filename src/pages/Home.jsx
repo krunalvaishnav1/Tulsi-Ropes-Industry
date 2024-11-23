@@ -5,91 +5,98 @@ import { FaPhoneAlt } from "react-icons/fa";
 const Home = () => {
   return (
     <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white">
-      {/* Hero Contant */}
-      <section
-        className="relative h-96 w-full bg-center bg-cover border-b"
-        style={{
-          backgroundImage: `url(${assets.main1})`,
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-          <div className="text-center px-6 md:px-12 max-w-3xl">
-            {/* Headline */}
-            <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6 tracking-wide">
-              Top Grade Quality Ropes for Every Industry Need
-            </h1>
-            {/* Subheadline */}
-            <p className="text-lg md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Delivering strength and durability with ropes crafted to meet the
-              highest standards.
-            </p>
-            {/* Call to Actions */}
-            <div className="flex flex-col md:flex-row items-center gap-6 justify-center">
-              <a
-                href="/product"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
-              >
-                View Our Products
-              </a>
-              <a
-                href="/contact"
-                className="bg-gray-100 hover:bg-gray-200 text-blue-600 font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
-              >
-                Contact Us
-              </a>
+{/* Hero Section */}
+<section
+  className="relative h-screen w-full bg-center bg-cover"
+  style={{
+    backgroundImage: `url(${assets.main1})`,
+  }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+    {/* Content */}
+    <div className="text-center px-6 md:px-12 max-w-4xl">
+      {/* Animated Headline */}
+      <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6 tracking-wide">
+        <span className="block animate-fadeUp opacity-0 delay-100">
+          Top Grade Quality Ropes
+        </span>
+        <span className="block animate-fadeUp opacity-0 delay-200">
+          for Every Industry Need
+        </span>
+      </h1>
+      
+      {/* Subheadline */}
+      <p className="text-lg md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto animate-fadeUp opacity-0 delay-300">
+        Delivering strength and durability with ropes crafted to meet the
+        highest standards.
+      </p>
+
+      {/* Call to Actions */}
+      <div className="flex flex-col md:flex-row items-center gap-6 justify-center animate-fadeUp opacity-0 delay-400">
+        <a
+          href="/product"
+          className="bg-blue-600 hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 hover:translate-y-1"
+        >
+          View Our Products
+        </a>
+        <a
+          href="/contact"
+          className="bg-gray-100 hover:bg-gray-200 text-blue-600 font-semibold py-3 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 hover:translate-y-1"
+        >
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {/* Subtle Parallax Effect */}
+  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-20 pointer-events-none"></div>
+</section>
+
+
+     {/* Features Section */}
+     <section className="py-16 border-b">
+        <h2 className="text-center text-3xl md:text-4xl font-semibold mb-12">
+          Why Choose Us?
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-12">
+          {/* Feature Cards */}
+          {[
+            {
+              title: "State-of-the-Art Manufacturing",
+              content:
+                "Our ropes are crafted in a modern facility with cutting-edge technology and strict quality controls.",
+              icon: "🏭",
+              bgColor: "bg-indigo-600",
+            },
+            {
+              title: "Wide Range of Applications",
+              content:
+                "From industrial to packaging needs, our ropes offer reliability and adaptability in every environment.",
+              icon: "⚙️",
+              bgColor: "bg-blue-600",
+            },
+            {
+              title: "Guaranteed Quality",
+              content:
+                "Every product undergoes rigorous testing to ensure top-notch durability and tensile strength.",
+              icon: "☑",
+              bgColor: "bg-teal-600", 
+              
+            },
+          ].map((feature, index) => (
+            <div
+              key={index}
+              className={`${feature.bgColor} p-6 rounded-xl shadow-lg hover:shadow-2xl text-center text-white transform transition-transform hover:scale-105`}
+            >
+              <div className="text-4xl mb-4">{feature.icon}</div>
+              <h3 className="text-2xl font-semibold mb-2">{feature.title}</h3>
+              <p className="text-base">{feature.content}</p>
             </div>
-          </div>
+          ))}
         </div>
       </section>
-
-      {/* features*/}
-      <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black border-b py-16">
-        <h1 className="text-center font-bold text-2xl text-gray-300 mb-12">
-          Committed to excellence, we produce and supply premium ropes for
-          various industries.
-        </h1>
-
-        {/* Four Sections in a Row with Card Layout */}
-        <section className="px-6 md:px-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Manufacturing Excellence Section */}
-            <div className="bg-indigo-800 p-6 rounded-lg text-center shadow-xl flex flex-col justify-between h-full overflow-hidden border-b-4 border-indigo-800 hover:border-white transform transition-transform duration-300 hover:translate-x-2">
-              <h3 className="text-2xl font-bold mb-4 text-white">
-                Manufacturing Excellence
-              </h3>
-              <p className="text-lg text-white leading-relaxed overflow-hidden text-ellipsis">
-                Our ropes are made in a state-of-the-art facility with advanced
-                technology and stringent quality controls for superior strength
-                and durability.
-              </p>
-            </div>
-
-            {/* Versatile Applications Section */}
-            <div className="bg-blue-800 p-6 rounded-lg text-center shadow-xl flex flex-col justify-between h-full overflow-hidden border-b-4 border-blue-800 hover:border-white transform transition-transform duration-300 hover:translate-x-2">
-              <h3 className="text-2xl font-bold mb-4 text-white">
-                Versatile Applications
-              </h3>
-              <p className="text-lg text-white leading-relaxed overflow-hidden text-ellipsis">
-                Our premium ropes are designed for a wide range of uses, from
-                secure packaging to industrial and construction needs, ensuring
-                reliable performance in all environments.
-              </p>
-            </div>
-
-            {/* Uncompromising Quality Section */}
-            <div className="bg-sky-800 p-6 rounded-lg text-center shadow-xl flex flex-col justify-between h-full overflow-hidden border-b-4 border-sky-800 hover:border-white transform transition-transform duration-300 hover:translate-x-2">
-              <h3 className="text-2xl font-bold mb-4 text-white">
-                Uncompromising Quality
-              </h3>
-              <p className="text-lg text-white leading-relaxed overflow-hidden text-ellipsis">
-                Each rope is rigorously tested for durability, tensile strength,
-                and weather resistance, delivering industry-leading quality and
-                reliability with certifications.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
 
       {/* pp rope explnation */}
       <section className="bg-gradient-to-r from-gray-800 via-gray-900 to-black border-b text-white py-16">
