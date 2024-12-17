@@ -1,6 +1,6 @@
 import React from "react";
 import { FaWhatsapp, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { motion } from "framer-motion"; // Import motion from framer-motion
+import { motion } from "framer-motion";
 import assets from "../assets/FollowUs/followusAssets.js";
 
 const FollowUs = () => {
@@ -14,6 +14,7 @@ const FollowUs = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 1 }}
+            viewport={{ once: true }}
           >
             For More Information
           </motion.h2>
@@ -22,6 +23,7 @@ const FollowUs = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 1 }}
+            viewport={{ once: true }}
           >
             Follow On
             <div className="flex space-x-6 mt-4 justify-center lg:justify-start">
@@ -68,6 +70,7 @@ const FollowUs = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1 }}
+            viewport={{ once: true }}
           >
             @tulsiropesindustry
           </motion.p>
@@ -76,6 +79,7 @@ const FollowUs = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1.3, duration: 1 }}
+            viewport={{ once: true }}
           >
             Discover the Strength and Versatility of Tulsi Ropes Industry's PP
             Ropes, available in both Hank Type (2 to 3.5 Width) and Coil Type
@@ -87,6 +91,7 @@ const FollowUs = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1.6, duration: 1 }}
+            viewport={{ once: true }}
           >
             Get in touch to discuss our products and competitive pricing! Let's
             chat.
@@ -112,6 +117,7 @@ const FollowUs = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 2, duration: 1 }}
+            viewport={{ once: true }}
           />
           <motion.img
             src={assets.f2}
@@ -120,6 +126,7 @@ const FollowUs = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 2.2, duration: 1 }}
+            viewport={{ once: true }}
           />
           <motion.img
             src={assets.f3}
@@ -128,6 +135,7 @@ const FollowUs = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 2.4, duration: 1 }}
+            viewport={{ once: true }}
           />
           <motion.img
             src={assets.f4}
@@ -136,6 +144,7 @@ const FollowUs = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 2.6, duration: 1 }}
+            viewport={{ once: true }}
           />
         </div>
       </div>
