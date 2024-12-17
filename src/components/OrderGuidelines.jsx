@@ -4,10 +4,10 @@ import { FaTruck, FaGlobe, FaStore } from "react-icons/fa"; // Import icons
 
 const OrderGuidelines = () => {
   return (
-    <section className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white py-8 md:py-16">
+    <section className="bg-gradient-to-r from-gray-950 via-gray-800 to-gray-700 border-b text-white py-8 md:py-16">
       <div className="max-w-6xl mx-auto text-center px-6">
         <motion.h2
-          className="font-bold text-2xl sm:text-3xl md:text-4xl text-gray-300 mb-4 sm:mb-6"
+          className="font-bold text-2xl sm:text-3xl md:text-4xl text-white mb-4 sm:mb-6"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
