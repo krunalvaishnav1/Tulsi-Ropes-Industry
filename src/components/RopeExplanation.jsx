@@ -38,7 +38,7 @@ const RopeExplanation = () => {
 
         <div className="lg:w-1/2 text-left mb-8 lg:mb-0 order-2 lg:order-1">
           <motion.h2
-            className="font-bold text-2xl text-gray-300 mb-6"
+            className="font-bold text-2xl text-white mb-6"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}

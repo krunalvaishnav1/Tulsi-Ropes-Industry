@@ -1,72 +1,47 @@
 import React from "react";
-import assets from "../assets/assets";
 import { motion } from "framer-motion";
+import { FaHistory, FaBullseye, FaRoute, FaStar, FaCogs } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div>
-      {/* Hero Section */}
-      <motion.section
-        className="relative h-screen w-full bg-center bg-cover"
-        style={{ backgroundImage: `url(${assets.aboutHero})` }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+    <div className="pt-32 pb-10  bg-gradient-to-r from-gray-900 via-gray-800 to-gray-950">
+      <motion.h1
+        className="text-4xl font-bold text-center text-gray-100 mb-6"
+        initial={{ y: 50, opacity: 0, scale: 0.8 }}
+        animate={{ y: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5, delay: 0.5 }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center">
-          <div className="text-center px-6 md:px-12 max-w-4xl">
-            <motion.h1
-              className="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6 tracking-wide"
-              initial={{ y: -100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 2, delay: 0.5 }}
-            >
-              About Tulsi Rope Industry
-            </motion.h1>
-            <motion.p
-              className="text-lg md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto"
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 2, delay: 0.5 }}
-            >
-              Dedicated to manufacturing premium-quality ropes tailored for
-              industrial and export needs. Tulsi Rope Industry combines
-              craftsmanship with innovation to deliver products that stand the
-              test of time.
-            </motion.p>
-          </div>
-        </div>
-      </motion.section>
+        About
+      </motion.h1>
+      <motion.p
+        className="text-lg text-center text-gray-300 mb-12 px-4 md:px-16"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1.5, delay: 1 }}
+      >
+        Strong Ropes, Stronger Partnerships.
+      </motion.p>
 
-      {/* About Section */}
-      <section className="py-16 bg-gray-100">
+      {/* Our Story */}
+      <section className="py-16 bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg shadow-lg mx-4 md:mx-16">
         <div className="container mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row items-center gap-12">
-            {/* Company Image */}
-            <motion.img
-              src={assets.companyPhoto}
-              alt="Tulsi Rope Industry"
-              className="w-full md:w-1/2 rounded-lg shadow-lg"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1.5 }}
-            />
-
-            {/* Company Details */}
             <div>
               <motion.h2
-                className="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
+                className="text-3xl md:text-4xl font-bold text-gray-200 mb-6 flex items-center gap-2"
                 initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
               >
-                Our Story
+                <FaHistory /> Our Story
               </motion.h2>
               <motion.p
-                className="text-lg text-gray-700 mb-4"
+                className="text-lg text-gray-400 mb-4 leading-relaxed"
                 initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
               >
                 Tulsi Rope Industry has been a pioneer in the rope manufacturing
                 business for over a decade. We specialize in creating
@@ -78,22 +53,24 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Mission Section */}
-      <section className="py-16">
+      {/* Our Mission */}
+      <section className="py-16 mt-10 bg-gradient-to-r from-gray-700 to-gray-800 rounded-lg shadow-lg mx-4 md:mx-16">
         <div className="container mx-auto px-6 md:px-12">
           <motion.h2
-            className="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
+            className="text-3xl md:text-4xl font-bold text-gray-200 mb-6 flex items-center gap-2"
             initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
           >
-            Our Mission
+            <FaBullseye /> Our Mission
           </motion.h2>
           <motion.p
-            className="text-lg text-gray-700"
+            className="text-lg text-gray-400 leading-relaxed"
             initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
           >
             At Tulsi Rope Industry, our mission is to provide high-quality,
             durable ropes that meet the diverse needs of various industries. We
@@ -104,22 +81,24 @@ const About = () => {
         </div>
       </section>
 
-      {/* Routes Available Section */}
-      <section className="py-16 bg-gray-100">
+      {/* Routes Available */}
+      <section className="py-16 mt-10 bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg shadow-lg mx-4 md:mx-16">
         <div className="container mx-auto px-6 md:px-12">
           <motion.h2
-            className="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
+            className="text-3xl md:text-4xl font-bold text-gray-200 mb-6 flex items-center gap-2"
             initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
           >
-            Routes Available
+            <FaRoute /> Routes Available
           </motion.h2>
           <motion.p
-            className="text-lg text-gray-700 mb-4"
+            className="text-lg text-gray-400 mb-4 leading-relaxed"
             initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
           >
             We deliver our high-quality ropes to various industries worldwide.
             Our routes include direct shipping to major cities across the globe,
@@ -129,22 +108,24 @@ const About = () => {
         </div>
       </section>
 
-      {/* Success Story Section */}
-      <section className="py-16">
+      {/* Our Success Story */}
+      <section className="py-16 mt-10 bg-gradient-to-r from-gray-700 to-gray-800 rounded-lg shadow-lg mx-4 md:mx-16">
         <div className="container mx-auto px-6 md:px-12">
           <motion.h2
-            className="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
+            className="text-3xl md:text-4xl font-bold text-gray-200 mb-6 flex items-center gap-2"
             initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
           >
-            Our Success Story
+            <FaStar /> Our Success Story
           </motion.h2>
           <motion.p
-            className="text-lg text-gray-700 mb-4"
+            className="text-lg text-gray-400 leading-relaxed"
             initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
           >
             Over the years, Tulsi Rope Industry has gained the trust of numerous
             clients due to our unwavering commitment to quality and service. Our
@@ -155,22 +136,24 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Process of Making Rope Section */}
-      <section className="py-16 bg-gray-100">
+      {/* Our Process */}
+      <section className="py-16 mt-10 bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg shadow-lg mx-4 md:mx-16">
         <div className="container mx-auto px-6 md:px-12">
           <motion.h2
-            className="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
+            className="text-3xl md:text-4xl font-bold text-gray-200 mb-6 flex items-center gap-2"
             initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
           >
-            Our Process of Making Rope
+            <FaCogs /> Our Process of Making Rope
           </motion.h2>
           <motion.p
-            className="text-lg text-gray-700 mb-4"
+            className="text-lg text-gray-400 mb-4 leading-relaxed"
             initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
           >
             The process of making our ropes involves high-quality materials,
             state-of-the-art machinery, and skilled craftsmanship. We start with
@@ -178,16 +161,6 @@ const About = () => {
             strong, durable threads. These threads are twisted and braided under
             controlled conditions to create ropes that meet the highest
             standards of strength and reliability.
-          </motion.p>
-          <motion.p
-            className="text-lg text-gray-700"
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1.5, delay: 0.3 }}
-          >
-            Each step in the process is monitored for quality, ensuring that
-            every rope we produce is ready for demanding applications in various
-            industries.
           </motion.p>
         </div>
       </section>
