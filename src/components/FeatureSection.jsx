@@ -27,7 +27,7 @@ const FeatureSection = () => {
   ];
 
   return (
-    <section className="py-10 border-b">
+    <section className=" py-10 border-b bg-gradient-to-r from-gray-950 via-gray-800 to-gray-800 text-white">
       <h2 className="text-center text-3xl md:text-4xl font-semibold mb-12">
         Why Choose Us?
       </h2>

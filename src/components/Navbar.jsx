@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-black via-slate-800 to-gray-950 p-5 shadow-lg">
+    <nav className="fixed top-0 w-full bg-gradient-to-r from-black via-slate-800 to-gray-950 py-2 shadow-lg z-50">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo and Business Name */}
         <a href="/" className="flex items-center space-x-4">
@@ -21,19 +21,19 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
-          <a href="/" className="text-white font-semibold hover:text-yellow-300 transition-colors duration-300 px-4 py-2 rounded-md hover:bg-gray-700">
+          <a href="/" className="text-white font-semibold hover:text-yellow-300 transition-colors duration-300 px-1 py-2 rounded-md hover:bg-gray-700">
             Home
           </a>
-          <a href="/about-us" className="text-white font-semibold hover:text-yellow-300 transition-colors duration-300 px-4 py-2 rounded-md hover:bg-gray-700">
+          <a href="/about-us" className="text-white font-semibold hover:text-yellow-300 transition-colors duration-300 px-1 py-2 rounded-md hover:bg-gray-700">
             About
           </a>
-          <a href="/product" className="text-white font-semibold hover:text-yellow-300 transition-colors duration-300 px-4 py-2 rounded-md hover:bg-gray-700">
+          <a href="/product" className="text-white font-semibold hover:text-yellow-300 transition-colors duration-300 px-1 py-2 rounded-md hover:bg-gray-700">
             Our Products
           </a>
-          <a href="/contact" className="text-white font-semibold hover:text-yellow-300 transition-colors duration-300 px-4 py-2 rounded-md hover:bg-gray-700">
+          <a href="/contact" className="text-white font-semibold hover:text-yellow-300 transition-colors duration-300 px-1 py-2 rounded-md hover:bg-gray-700">
             Contact Us
           </a>
-          <a href="/industry-gallary" className="text-white font-semibold hover:text-yellow-300 transition-colors duration-300 px-4 py-2 rounded-md hover:bg-gray-700">
+          <a href="/industry-gallary" className="text-white font-semibold hover:text-yellow-300 transition-colors duration-300 px-1 py-2 rounded-md hover:bg-gray-700">
             Industry Gallery
           </a>
         </div>

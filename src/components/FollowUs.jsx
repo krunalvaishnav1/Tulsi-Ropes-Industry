@@ -5,7 +5,7 @@ import assets from "../assets/FollowUs/followusAssets.js";
 
 const FollowUs = () => {
   return (
-    <section className="py-16 px-6 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 border-b text-white">
+    <section className="py-16 px-6 bg-gradient-to-r from-gray-800 via-gray-900 to-black border-b text-white">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0">
         {/* Left Section */}
         <div className="lg:w-1/2 text-center lg:text-left">
@@ -82,8 +82,8 @@ const FollowUs = () => {
             viewport={{ once: true }}
           >
             Discover the Strength and Versatility of Tulsi Ropes Industry's PP
-            Ropes, available in both Hank Type (2 to 3.5 Width) and Coil Type
-            (2.5 to 3.5 Width). Our Products Deliver Unmatched Strength and
+            Ropes, available in both Hank Type (1 to 3.5 Width) and Coil Type
+            (2 to 3.5 Width). Our Products Deliver Unmatched Strength and
             Quality!
           </motion.p>
           <motion.p

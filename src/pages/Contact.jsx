@@ -1,27 +1,36 @@
 import React from "react";
-import {
-  FaPhoneAlt,
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <section className="">
-      <div className="p-10 bg-gradient-to-r from-black via-slate-800 to-gray-950">
-        <h1 className="text-4xl font-bold text-center text-white mb-6">
+      <div className="pt-32 pb-1 mb-10 bg-gradient-to-r from-black via-slate-800 to-gray-950">
+        <motion.h1
+          className="text-4xl font-bold text-center text-white mb-6"
+          initial={{ y: 50, opacity: 0, scale: 0.8 }}
+          animate={{ y: 0, opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5, delay: 0.5 }}
+        >
           Contact Us
-        </h1>
-        <p className="text-xl text-center text-white mb-12">
+        </motion.h1>
+        <motion.p
+          className="text-xl text-center text-white mb-12"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.5, delay: 1 }}
+        >
           If you have any general inquiries, we'd love to hear from you.
-        </p>
+        </motion.p>
       </div>
-
-      <div className="container mx-auto px-4 mb-8 mt-8">
+      <motion.div
+        className="container mx-auto px-4 mb-8 mt-8"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         {/* Contact Details */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
@@ -53,8 +62,7 @@ const Contact = () => {
             <div className="mb-4 flex items-center">
               <FaLocationDot className="text-gray-600 text-xl mr-3" />
               <p className="text-lg text-red-600 font-semibold hover:text-red-800">
-                OPP.Atul Oil Cake, Jetpur Road,
-                Dhoraji, 360410, Gujarat, India
+                OPP.Atul Oil Cake, Jetpur Road, Dhoraji, 360410, Gujarat, India
               </p>
             </div>
           </div>
@@ -75,42 +83,6 @@ const Contact = () => {
                 <FaPhoneAlt className="mr-3 text-xl" /> Chat with us on WhatsApp
               </a>
             </div>
-
-            {/* Social Icons */}
-            {/* <div className="flex space-x-6 justify-center">
-              <a
-                href="https://www.facebook.com/tulsirope"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-700 text-3xl transition duration-300 transform hover:scale-110"
-              >
-                <FaFacebook />
-              </a>
-              <a
-                href="https://twitter.com/tulsirope"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-700 text-3xl transition duration-300 transform hover:scale-110"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="https://www.instagram.com/tulsirope"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-700 text-3xl transition duration-300 transform hover:scale-110"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/tulsirope"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-700 text-3xl transition duration-300 transform hover:scale-110"
-              >
-                <FaLinkedin />
-              </a>
-            </div> */}
           </div>
         </div>
 
@@ -130,7 +102,8 @@ const Contact = () => {
             ></iframe>
           </div>
         </div>
-      </div>
+      </motion.div>
+      );
     </section>
   );
 };
